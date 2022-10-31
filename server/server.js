@@ -14,14 +14,6 @@ app.use(cors({
 
 mongoose.connect(process.env.MONGO_URL).then(console.log("connect to mongo")).catch(err=>console.log(err));
 
-app.get("/",(req,res)=>{
-    console.log('caled');
-    res.download("xx.png",(err)=>{
-        if(err)
-        console.log(err);
-    })
-    console.log('afterdown');
-})
 
 app.get("/getfeedback",(req,res)=>{
     FeedbackModel.find({},(err,result)=>  {
