@@ -8,7 +8,7 @@ const FeedbackModel=require('./models/feedback')
 const prgrmdatamodel=require('./models/senddata')
 app.use(express.json());
 app.use(cors({
-    origin:["http://localhost:3000","https://origintranscoder-app.onrender.com"]
+    origin:["http://localhost:3000","https://origintranscoder.onrender.com"]
 }
 ));
 
